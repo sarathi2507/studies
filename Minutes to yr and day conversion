@@ -1,0 +1,17 @@
+import java.io.*;
+class minutes
+{
+	public static void main(String args[])throws IOException
+	{
+	int m,d,y;
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	System.out.println("Enter the minutes");
+	m=Integer.parseInt(br.readLine());
+	int minutes=m;
+	y=minutes/525600;
+	minutes=m%525600;
+	d=minutes/1440;
+	System.out.println(y+"year and");
+	System.out.println(d+"days");
+	}
+}

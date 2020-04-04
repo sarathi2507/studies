@@ -1,0 +1,21 @@
+import java.io.*;
+class task3
+{
+	public static void main(String args[])throws IOException
+	{
+	int choice;
+	System.out.println("PICK ONE: 1.Hi \t 2.Hey \t 3.Hello \t");
+ 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	choice =Integer.parseInt(br.readLine());
+	switch(choice)
+	   {
+		case 1: System.out.println("you said Hi");
+			break;
+		case 2: System.out.println("you said Hey");
+			break;
+		case 3: System.out.println("you said Hello");
+			break;
+		default:System.out.println("Invalid choice");
+	   }
+        }
+}
